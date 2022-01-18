@@ -9,23 +9,24 @@ const useData = () => {
   }, []);
 
   const getInfo = async () => {
-    const url =
-      "https://flink-web-test.herokuapp.com/api/v1/getAllWaifusAndHusbandos";
-    const resp = await axios.get(url);
-    const { allWaifusAndHusbandos } = await resp.json();
+    const infoUsers = await axios
+      .get(
+        "https://flink-web-test.herokuapp.com/api/v1/getAllWaifusAndHusbandos"
+      )
+      .then((response) => response.data);
 
-    const allData = allWaifusAndHusbandos.map((data) => {
+    const { allWaifusAndHusbandos } = infoUsers;
+    const users = allWaifusAndHusbandos.map((user) => {
       return {
-        img: data.image,
-        name: data.name,
-        gender: data.gender,
-        age: data.age,
+        img: user.image,
+        name: user.name,
+        gender: user.gender,
+        age: user.age,
       };
     });
 
-    const data = allData.map((item) => item);
-    console.log(data);
-    setInfo(data);
+    const user = users.map((item) => item);
+    setInfo(user);
   };
 
   return { getInfo, info };

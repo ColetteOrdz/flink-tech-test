@@ -1,6 +1,5 @@
 import React from "react";
-import {useUser} from "../Hooks/useUser";
-
+import useUser from "../Hooks/useUser";
 
 const Register = () => {
   const {signIn} = useUser();

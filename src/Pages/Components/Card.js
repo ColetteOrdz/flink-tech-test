@@ -1,49 +1,47 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
 import CardItem from "./CardItem";
-import useData from "../Hooks/useData";
+//import useData from "../../Hooks/useData";
 
 
-export const Card = () => {
-    const info = useData();
-    console.log(info)
+import "../Components/Styles/CardItem.css"
 
-//   const printUsers = (e) => {
-//     e.preventDefault()
-//     getInfo()
-//     .then((response) => console.log(response))
-//     .catch((error) => console.log(error.message))
-//   };
+const Card = () => {
+  // const {getInfo, info} = useData();
 
-    //  const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState([]);
 
-//   useEffect(() => {
-//     getInfo();
-//   }, []);
+  useEffect(() => {
+    getInfo();
+  }, []);
 
-//   const getInfo = async () => {
-//     const url =
-//       "https://flink-web-test.herokuapp.com/api/v1/getAllWaifusAndHusbandos";
-//     const resp = await fetch(url);
-//     const { allWaifusAndHusbandos } = await resp.json();
+  const getInfo = async () => {
+    const infoUsers = await axios
+      .get(
+        "https://flink-web-test.herokuapp.com/api/v1/getAllWaifusAndHusbandos"
+      )
+      .then((response) => response.data);
 
-//     const allData = allWaifusAndHusbandos.map((data) => {
-//       return {
-//         img: data.image,
-//         name: data.name,
-//         gender: data.gender,
-//         age: data.age,
-//       };
-//     });
+    const { allWaifusAndHusbandos } = infoUsers;
+    const users = allWaifusAndHusbandos.map((user) => {
+      return {
+        img: user.image,
+        name: user.name,
+        gender: user.gender,
+        age: user.age,
+      };
+    });
 
-//     const data = allData.map((item) => item);
-//     console.log(data);
-//     setInfo(data);
-//   };
+    const user = users.map((item) => item);
+    setInfo(user);
+  };
 
   return (
     <>
-      <div>
+      <div className="card-container">
         {info.map((user) => (
           <CardItem
+            key={user.name}
             img={user.img}
             name={user.name}
             gender={user.gender}
@@ -54,3 +52,5 @@ export const Card = () => {
     </>
   );
 };
+
+export default Card;

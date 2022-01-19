@@ -6,37 +6,34 @@
   padding-bottom: 2rem;
 }
 
-
-
-img{
-  margin-bottom: 0%
+img {
+  margin-bottom: 0%;
 }
 
-.MuiCard-root{
+.MuiCard-root {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
 }
 
-.MuiCardContent-root{
-  padding: 0%
+.MuiCardContent-root {
+  padding: 0%;
 }
 
-.MuiCardContent-root{
+.MuiCardContent-root {
   background-color: rgba(51, 48, 48, 0.719);
-  margin:0%;
-  padding: 8px
+  margin: 0%;
+  padding: 8px;
 }
 
-.MuiCardActions-root{
+.MuiCardActions-root {
   width: auto;
   height: 20px;
 }
 
- 
-.match-icons{
-  width: 10%
-} 
+.match-icons {
+  width: 10%;
+}
 
 /* .card {
   align-items: center;

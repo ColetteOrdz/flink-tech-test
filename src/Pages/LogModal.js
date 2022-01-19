@@ -1,10 +1,10 @@
-import React from 'react';
-import Register from '../Register';
-import Modal from '@material-ui/core/Modal';
+import React from "react";
+import Modal from "@material-ui/core/Modal";
+import LogIn from "./Components/LogIn";
 
-import "../Components/Styles/Home.css"
+import "./Components/Styles/Home.css";
 
-const RegModal = () => {
+const LogModal = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -18,19 +18,18 @@ const RegModal = () => {
   return (
     <div>
       <button className="main-bttns" type="button" onClick={handleOpen}>
-        Create account
+        Log In
       </button>
       <Modal
-        
         open={open}
         onClose={handleClose}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-      <Register/>
+        <LogIn />
       </Modal>
     </div>
   );
 };
 
-export default RegModal;
+export default LogModal;

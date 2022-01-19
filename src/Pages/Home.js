@@ -2,11 +2,10 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import Footer from "./Components/Footer";
 
-
 import WhiteLogo from "../assets/logo-tinder-blanco.png";
 import "./Components/Styles/Home.css";
-import RegModal from "./Components/RegModal";
-import LogModal from "./Components/LogModal";
+import RegModal from "./RegModal";
+import LogModal from "./LogModal";
 
 const Home = () => {
   return (
@@ -22,7 +21,6 @@ const Home = () => {
           </Link> */}
           <RegModal />
           <LogModal />
-          
         </div>
       </div>
       <Footer />

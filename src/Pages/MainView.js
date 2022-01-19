@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import BottomNavigation from "./Components/Nav";
 
 const MainView = () => {
+
   return (
     <>
       <Header />

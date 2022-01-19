@@ -1,0 +1,82 @@
+.reg-form {
+  align-self: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-self: center;
+  height: 60%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+}
+
+.log-form {
+  align-self: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-self: center;
+  height: 30%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+label {
+  color: #6a0341;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  background-color: #6a034186;
+  border: none;
+  border-radius: 10px;
+  padding-left: 1rem;
+  width: 200px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+select,
+.age-input {
+  width: 50px;
+}
+
+.form-btn {
+  background-color: #6a0341;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 1rem;
+  width: 150px;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #6a0341;
+  margin-top: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+h6 {
+  color: #6a0341;
+  font-weight: lighter;
+  margin-top: 1rem;
+}

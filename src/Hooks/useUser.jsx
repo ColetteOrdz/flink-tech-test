@@ -40,6 +40,10 @@ const useUser = () => {
     //setUsers(response.data)
   };
 
+  // const logOut = () =>{
+
+  // }
+
   return { signIn, logIn };
 };
 

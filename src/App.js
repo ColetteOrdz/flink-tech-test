@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RegModal from "./Pages/Components/RegModal";
 import Home from "./Pages/Home";
-import LogIn from "./Pages/LogIn";
-import Register from "./Pages/Register";
+import LogModal from "./Pages/Components/LogModal";
 import MainView from "./Pages/MainView";
-
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/login" element={<LogIn />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<LogModal />} />
+        <Route path="/register" element={<RegModal />} />
         <Route path="/main" element={<MainView />} />
       </Routes>
     </Router>

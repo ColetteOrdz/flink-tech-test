@@ -1,0 +1,42 @@
+
+/* Header styles */
+.main-header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 67px;
+    justify-content: space-between;
+    padding-left: 1rem;
+    position: fixed;
+    
+}
+
+.main-logo{
+    width:30%;
+    margin-bottom: 0%;
+}
+
+.log-out{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 8%;
+}
+
+
+/* Nav styles*/
+nav{
+    background-color: #fff;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1rem;    
+}
+
+.nav-icons{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 10%;
+}

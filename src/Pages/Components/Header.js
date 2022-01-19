@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import WhiteLogo from "../../assets/logo-tinder-blanco.png";
+import DegLogo from "../../assets/logo-tinder-deg.png";
+import Logout from "../../assets/logout.png"
+
+import "./Styles/MainView.css"
 
 const Header = () => {
   return (
     <>
-      <div className="main-header" bg-color="black">
-        <Link to="/">
-          <img src={WhiteLogo} alt="Logo" width="30%"></img>
+      <div className="main-header">
+        <Link to="/main">
+          <img className="main-logo" src={DegLogo} alt="Logo" ></img>
+          <img className="log-out" src={Logout} alt="Log out" ></img>
         </Link>
       </div>
     </>

@@ -4,8 +4,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+// import Button from '@material-ui/core/Button';
+// import No from "../../assets/no.png"
+// import Like from "../../assets/like.png"
 
 const CardItem = ({ img, name, age }) => {
 
@@ -19,18 +20,15 @@ const CardItem = ({ img, name, age }) => {
           image={img}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-           {name}, {age}
-          </Typography>
+          
+           <h3>{name}, {age}</h3>
+          
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Like
-        </Button>
-        <Button size="small" color="primary">
-          Nope
-        </Button>
+          {/* <img className="match-icons" src={No} alt="Nope"/>
+        
+        <img className="match-icons" src={Like} alt="Yep"/> */}
       </CardActions>
     </Card>
   );

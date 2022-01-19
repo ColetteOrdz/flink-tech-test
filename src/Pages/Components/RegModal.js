@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from '@material-ui/core/Modal';
 import Register from '../Register';
+import Modal from '@material-ui/core/Modal';
 
 import "../Components/Styles/Home.css"
 
@@ -21,6 +21,7 @@ const RegModal = () => {
         Create account
       </button>
       <Modal
+        
         open={open}
         onClose={handleClose}
         aria-labelledby="simple-modal-title"

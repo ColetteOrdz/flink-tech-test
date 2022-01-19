@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import useUser from "../Hooks/useUser";
+import RegModal from "./Components/RegModal"
 
 import "./Components/Styles/Forms.css";
 
@@ -26,9 +27,10 @@ const LogIn = () => {
           <button className="form-btn" type="submit">
             Log in
           </button>
-          <Link to="/register">
+          {/* <Link to="/register">
             <button>Don't have an accout? Sign In</button>
-          </Link>
+          </Link> */}
+          <RegModal  />
         </div>
       </form>
     </>

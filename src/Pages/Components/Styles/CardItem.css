@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-left: 15%;
   padding-top: 67px;
   padding-bottom: 2rem;
 }
@@ -21,7 +22,8 @@ img {
 }
 
 .MuiCardContent-root {
-  background-color: rgba(51, 48, 48, 0.719);
+  background-color: #fff;
+  color: #6a0341;
   margin: 0%;
   padding: 8px;
 }

@@ -19,7 +19,13 @@ const Register = () => {
   const API_URL = "https://flink-web-test.herokuapp.com";
 
   const signIn = async () => {
-    return await axios.post(`${API_URL}/api/v1/register`,{
+    return await axios({
+      method: "post",
+      url: `${API_URL}/api/v1/register`,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      data: {
         email: email,
         name: name,
         lastName: lastName,
@@ -27,18 +33,15 @@ const Register = () => {
         preferredGender: prefGender,
         gender: gender,
         age: age,
-      },
-      {headers: {
-        "Content-Type": "application/json"
-      }}
-    );
+      }
+    });
   };
 
   const register = (e) => {
     e.preventDefault();
     signIn()
       .then((response) => {
-        console.log(response)
+        console.log(response.data)
         // if(response.data.isLoggedIn === true){
         //   localStorage.setItem("user", response.data.isLoggedIn);
         //   <Navigate to="/main" />
@@ -51,7 +54,7 @@ const Register = () => {
     <>
       <form onSubmit={(e) => register(e)} className="reg-form">
         <label>Name*</label>
-        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} required />
+        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} required autoFocus/>
         <label>Last name</label>
         <input type="text" value={lastName} onChange={(e)=>setLastName(e.target.value)}/>
         <label name="email">Email*</label>

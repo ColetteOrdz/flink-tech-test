@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.reg-form input, label, select {
+  margin-left: 10%
+}
+
 .log-form {
   align-self: center;
   background-color: #fff;
@@ -30,12 +34,14 @@ label {
   color: #6a0341;
   font-size: 18px;
   font-weight: bold;
+  margin-left: 15%;
 }
 
 input {
   background-color: #6a034186;
   border: none;
   border-radius: 10px;
+  margin-left: 15%;
   padding-left: 1rem;
   width: 220px;
 }

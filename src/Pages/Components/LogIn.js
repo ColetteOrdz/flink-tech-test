@@ -38,7 +38,7 @@ const LogIn = () => {
     <>
       <form onSubmit={(e) => login(e)} className="log-form">
         <label className="data-label">Email*</label>
-        <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="example@mail.com" required />
+        <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="example@mail.com" required autoFocus />
         <label className="data-label">Password*</label>
         <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password" required />
 

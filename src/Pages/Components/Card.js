@@ -1,13 +1,10 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import CardItem from "./CardItem";
-//import useData from "../../Hooks/useData";
 
 import "../Components/Styles/CardItem.css";
 
 const Card = () => {
-  // const {getInfo, info} = useData();
-
   const [info, setInfo] = useState([]);
 
   useEffect(() => {

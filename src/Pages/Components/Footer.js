@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="main-footer">
-        <p>© 2022 Match Group, LLC, All Rights Reserved.</p>
+        <p id="text-footer">© 2022 Match Group, LLC, All Rights Reserved.</p>
       </div>
     </>
   );

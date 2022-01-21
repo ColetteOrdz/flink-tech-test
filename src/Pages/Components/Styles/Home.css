@@ -16,8 +16,8 @@ body {
 
 img {
   justify-self: center;
-  width: 65%;
   margin-bottom: 50px;
+  width: 65%;
 }
 
 .btn-container {
@@ -52,7 +52,9 @@ img {
   padding: 5px;
   width: 100%;
 }
-.main-footer p {
-  width: 260px;
+
+#text-footer {
+  color: #fff;
   height: 0%;
+  width: 260px;
 }

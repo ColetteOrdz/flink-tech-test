@@ -20,6 +20,7 @@ const CardItem = ({ img, name, age }) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
+        {/* ---- Ajustar íconos a las cards ---- */}
         {/* <img className="match-icons" src={No} alt="Nope"/>        
         <img className="match-icons" src={Like} alt="Yep"/> */}
       </CardActions>

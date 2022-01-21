@@ -11,12 +11,13 @@
 }
 
 .main-logo {
-  width: 30%;
   margin-bottom: 0%;
+  width: 30%;
 }
 
 .log-out {
   margin-bottom: 0%;
+  margin-right: 15px;
   padding-bottom: 0%;
   width: 8%;
 }

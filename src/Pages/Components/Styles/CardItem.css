@@ -29,42 +29,10 @@ img {
 }
 
 .MuiCardActions-root {
-  width: auto;
   height: 20px;
+  width: auto;
 }
 
 .match-icons {
   width: 10%;
 }
-
-/* .card {
-  align-items: center;
-  background-color: rgb(45, 69, 177);
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  justify-content: center;
-  margin: 1rem;
-  width: 300px;
-} */
-
-/* .profile-img {
-  border-radius: 30px;
-  margin: 0%;
-  padding: 1rem;
-  width: 70%;
-} */
-/* 
-.user-info {
-  /* align-self: baseline;
-    position: absolute;
-    align-self: center;
-    background-color: rgba(128, 128, 128, 0.473); 
-  color: #fff;
-    height: 50px;
-  padding-left: 1rem;
-  padding-bottom: 0%;
-  position:inherit;
-  width: 236px;
-  
-} */

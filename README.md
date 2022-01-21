@@ -1,15 +1,15 @@
 # flink-tech-test
 Flink web technical test 
 
-## Resumen del proyecto
+# Resumen del proyecto
 
 Desarrollar una web estilo Tinder mobile first, que incluya las acciones de dicha plataforma, login, registro, home, pantalla principal y acciones estilo Tinder (like/nope), además del cierre de sesión.
 
-# Herramientas
+## Herramientas
 
 [API](https://flink-web-test.herokuapp.com/)
 
-# Tecnologías usadas
+## Tecnologías usadas
 
 * React
 * JS, HTML, CSS
@@ -19,15 +19,15 @@ Desarrollar una web estilo Tinder mobile first, que incluya las acciones de dich
 * Material-UI
 * Netlify
 
-## Prototipo
+# Prototipo
 
 [Prototipo Figma](https://www.figma.com/file/vPvQ7sUDvtopeoWJSb9GmC/Flink-web-test?node-id=0%3A1)
 
-## Desarrollo del proyecto
+# Desarrollo del proyecto
 
 Se plantearon cuatro historias de usuario principales:
 
-# HU 1 Página principal
+## HU 1 Página principal
 Yo como usuario ver en la pantalla principal los botones para ingresar a la plataforma.
 
 * Criterios de aceptación:
@@ -43,7 +43,7 @@ Yo como usuario ver en la pantalla principal los botones para ingresar a la plat
     * Maquetación de los botones principales
     * Botones para redireccionarte a los formularios de registro/inicio de sesión
 
-# HU 2 Formularios
+## HU 2 Formularios
 Yo como usuario quiero poder crear mi cuenta con datos básicos y así como especificar qué personas estoy interesada/o por encontrar, además de poder iniciar sesión posteriormente.
 
 * Criterios de aceptación:
@@ -58,7 +58,7 @@ Yo como usuario quiero poder crear mi cuenta con datos básicos y así como espe
     * Implementar un botón para cierre de sesión en el header
     * Bloquear la ruta para que una vez cerrada la sesión no se pueda volver atrás en el historial a la página de home
 
-# HU 3 Home
+## HU 3 Home
 Yo como usuario quiero ver en mi inicio las fotos/tarjetas con información de otros usuarios, de acuerdo a las preferencias especificadas en mi registro.
 
  * Criterios de aceptación:
@@ -70,7 +70,7 @@ Yo como usuario quiero ver en mi inicio las fotos/tarjetas con información de o
     * Filtrar las cards de acuerdo al campo de "preferredGender" del formulario de registro
     * Agregar la barra de navegación de la app
 
-# HU 4 Match
+## HU 4 Match
 Yo como usuario quiero poder hacer match o descartar personas/perfiles
 
 * Criterios de aceptación:
@@ -82,6 +82,6 @@ Yo como usuario quiero poder hacer match o descartar personas/perfiles
     * Funcionalidad para ocultar las cards que se descarten
     * Guardar las cards con like en alguna otra sección/vista (nice to have)
 
-## Despliegue de la aplicación
+# Despliegue de la aplicación
 
  [App deploy](https://flink-test-app.netlify.app)
